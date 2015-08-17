@@ -8,6 +8,72 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
  * App-wide Styles
  */
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #FA14FA;
+ }
+
+ h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #FA14FA;
+ }
+
+ h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #14FAEB;
+ }
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    color: #F6FF00;
+ }
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+ }
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: #14FA14;
+ }
+
+ li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    vertical-align: middle;
+    padding: auto;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ li:hover {
+    cursor: pointer;
+    color: orange;
+    // background-color: #353535;
+}
+
+#navbar-nav > li > a:hover {
+    cursor: pointer;
+    color: orange;
+    // background-color: #353535;
+}
+#navbar-nav-right > li > a {
+    background-color: white
+}
+#navbar-nav-right-hov > li > a:hover {
+    cursor: pointer;
+    color: orange;
+    // background-color: #353535;
+}
+
+img {
+    padding-right: 20px;
+}
+
+.navbar_remove_margin {
+    margin-bottom: 5px;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -15,9 +81,90 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+// Custom Syles -- BEGIN
+.ui_view_cotent {
+    padding: auto;
+    margin: auto;
+}
+
+.ul-folders {
+    margin: 15px 0px;
+    list-style-type: none;
+    // padding: 10%;
+    // margin-left: 10%;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-size: .8vw;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+
+}
+.ul-subfolders {
+    list-style-type: none;
+    color: gray;
+    font-weight: 85;
+    letter-spacing: 1.0px;
+    font-size: .8vw;
+    vertical-align: middle;
+    font-family: 'Raleway', sans-serif;
+}
+
+.files-col {
+    background-color: #424242;
+}
+
+.content-container {
+    // background-color: #242424;
+    color: gray;
+    padding: 1px;
+}
+
+.content-col {
+    background-color: #242424;
+    // background-image: url("../assets/images/kh_resume.jpg");
+    color: gray;
+    padding: 15px;
+    background-repeat: no-repeat;
+}
+
+.main_row {
+    height: 100%;
+}
+
+.window_nav {
+    margin-top: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #cfcfcf;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 99%;
+}
+
+.main {
+    margin: 20px;
+}
+
+.folder_arrow_right {
+    float: right;
+}
+
+.folder_arrow_down {
+    float: right;
+
+}
+
+.folder_icon {
+    float: left;
+}
+// bootstrap theme -- END
+
 // Component styles are injected through grunt
 // injector
-@import 'account/login/login.scss';
-@import 'admin/admin.scss';
+@import 'about/about.scss';
+@import 'contact/contact.scss';
 @import 'main/main.scss';
+@import 'work/work.scss';
+@import 'modal/modal.scss';
 // endinjector

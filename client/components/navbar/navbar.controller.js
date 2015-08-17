@@ -2,10 +2,28 @@
 
 angular.module('sublimeResumeApp')
   .controller('NavbarCtrl', function ($scope, $location) {
-    $scope.menu = [{
+    $scope.menu = [
+    {
       'title': 'Home',
       'link': '/'
-    }];
+    },
+
+    {
+      'title': 'About Me',
+      'link': '/about'
+    },
+
+    {
+      'title': 'Works',
+      'link': '/work'
+    },
+
+    {
+      'title': 'Contact Me',
+      'link': '/contact'
+    }
+
+    ];
 
     $scope.isCollapsed = true;
 

@@ -1,5 +1,5 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
-  <div class="container">
+<div class="navbar navbar-default navbar-static-top navbar_remove_margin" ng-controller="NavbarCtrl">
+  <div class="navbar-inverse">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
         <span class="sr-only">Toggle navigation</span>
@@ -7,14 +7,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">sublime-resume</a>
+
+      <a href="/" class="navbar-brand">Sublime </a>
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" id="navbar-nav">
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
             <a ng-href="{{item.link}}">{{item.title}}</a>
         </li>
       </ul>
+      <ul class="social-links list-inline navbar-right" id="navbar-nav-right navbar-nav-right-hov">
+                        <li><a href="https://github.com/hobbske" class="wow fadeInUp"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kevinhobbs1" class="wow fadeInUp"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/kevin.hobbs.1690" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/kevinwhobbs" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+                        <!-- <li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li> -->
+                        <li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
     </div>
   </div>
 </div>
