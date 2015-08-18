@@ -1,6 +1,4 @@
-.thing-form {
-    margin: 20px 0;
-}
+
 
 #banner {
     border-bottom: none;
@@ -24,24 +22,27 @@
 
 .footer {
     text-align: center;
-    padding: 30px 0;
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
 
-.main_block{
+.main_bckgrd {
+    background-image: url(../assets/images/main.png);
+}
+
+.main_block {
+
     text-align: center;
+    font-weight: 60px;
+    margin-top: 0px;
     padding-top: 5%;
-    padding-bottom: 20%;
-    padding: auto;
-    h1 { color: #FF0000;}
-    h2 { color: #0000FF;}
+
+    h1 { color: orange;}
+    h2 { color: white;}
     h3 { color: white;}
-    h4 { color: #00FF00;}
-    h5 { color: #FFFF00;}
-    p { color: #00FF00;}
-
-
+    h4 { color: white;}
+    h5 { color: white;}
+    p { color: white;}
 }
 
 

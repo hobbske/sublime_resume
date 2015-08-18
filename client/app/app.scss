@@ -4,63 +4,30 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
-// ng-class for controllers
-.MyhomeCtrl {
-
-}
-
-.MyaboutCtrl {
-
-}
-
-.MyworkCtrl {
-
-}
-
-.MycontactCtrl {
-
-}
-
 
 /**
  * App-wide Styles
  */
+.scroll-align {
+    margin-top: 60px;
+}
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    color: #FA14FA;
- }
+.background-gray {
+    background-color: #424242;
+    max-width: 101%;
+}
 
- h2 {
-    font-family: 'Raleway', sans-serif;
-    color: #FA14FA;
- }
+#header-align {
+    padding-right: 20%;
+}
 
- h3 {
-    font-family: 'Raleway', sans-serif;
-    color: #14FAEB;
- }
-
-h4{
-    font-family: 'Raleway', sans-serif;
-    color: #F6FF00;
- }
-
-h5 {
-    font-family: 'Raleway', sans-serif;
- }
-
-p {
-    font-family: 'Raleway', sans-serif;
-    color: #14FA14;
- }
+img {
+    padding-right: 5px;
+}
 
  li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    vertical-align: middle;
-    padding: auto;
+    margin-left: 5px;
+    padding: 10px 0px 10px 10px;
     font-family: 'Raleway', sans-serif;
  }
 
@@ -76,7 +43,7 @@ p {
     // background-color: #353535;
 }
 #navbar-nav-right > li > a {
-    background-color: white
+    color: orange;
 }
 #navbar-nav-right-hov > li > a:hover {
     cursor: pointer;
@@ -84,12 +51,8 @@ p {
     // background-color: #353535;
 }
 
-img {
-    padding-right: 20px;
-}
-
 .navbar_remove_margin {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .browsehappy {
@@ -106,44 +69,49 @@ img {
 }
 
 .ul-folders {
-    margin: 15px 0px;
-    height: 600px;
+
+    height: 100%;
+    width: 75%;
+    padding: 10px 2px;
     list-style-type: none;
-    // padding: 10%;
-    // margin-left: 10%;
     color: white;
     font-weight: 100;
-    letter-spacing: 1.5px;
-    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-size: 11px;
     vertical-align: middle;
     font-family: 'Raleway', sans-serif;
 
 }
+
+
 .ul-subfolders {
     list-style-type: none;
+    padding: 5px 0px 5px 4px;
     color: gray;
     font-weight: 85;
     letter-spacing: 1.0px;
-    font-size: 12px;
+    font-size: 9px;
     vertical-align: middle;
     font-family: 'Raleway', sans-serif;
 }
 
 .files-col {
     background-color: #424242;
+    column-fill: balance;
+    height: 100%;
+
 }
 
 .content-container {
     // background-color: #242424;
     color: gray;
-    padding: 1px;
-    height: 500px;
+    height: 100%;
+    column-fill: balance;
 }
 
 .content-col {
-    // background-color: #242424;
+    background-color: #242424;
     color: gray;
-    padding: 15px;
     background-repeat: no-repeat;
 }
 
@@ -152,13 +120,11 @@ img {
 }
 
 .window_nav {
-    margin-top: 1px;
-    margin-left: 6px;
-    margin-right: 6px;
+    margin: 0px 1px;
     background-color: #cfcfcf;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 99%;
+    width: 100%;
 }
 
 .main {
@@ -184,33 +150,6 @@ img {
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-
-/*!
- * Clean v2.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
-
-body {
-    font: 300 14px/1.8 'Raleway', sans-serif;
-    color: #666;
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    color: #E7746F;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #999;
-}
 
 /* ---------------------------------------------- /*
  * Transition elsements
@@ -252,41 +191,8 @@ a,
  * Typography
 /* ---------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
-    font: 700 40px/1.2 Raleway, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 5px 0 5px;
 
-}
 
-h2 {
-    font-size: 30px;
-    margin: 0 0 30px;
-}
-
-h3 {
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin: 0 0 5px;
-}
-
-h4 {
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-h5 {
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-
-h6 {
-    font-size: 11px;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
 
 
 /* ---------------------------------------------- /*
@@ -364,7 +270,6 @@ textarea.form-control {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 13px;
-    padding: 8px 26px;
     border: 0;
 }
 
@@ -418,18 +323,18 @@ textarea.form-control {
     background-color: #C7D2FF;
 }
 
-.pfblock {
-    padding: auto;
-}
+// .pfblock {
+//     padding: auto;
+// }
 
 .pfblock-gray {
     /*background: #f5f5f5;*/
     background-color: #222222;
 }
 
-.pfblock-image {
-    padding: 0;
-}
+// .pfblock-image {
+//     padding: 0;
+// }
 
 .calltoaction h1,
 .calltoaction h2,
@@ -469,7 +374,7 @@ textarea.form-control {
 }
 
 .pfblock-title{
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 0;
 }
 
@@ -501,7 +406,7 @@ textarea.form-control {
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
-    padding: 50px 0;
+    // padding: 50px 0;
     color: #999;
 }
 
@@ -512,8 +417,8 @@ textarea.form-control {
 }
 
 .calltoaction-decription{
-    padding-top: 20px;
-    padding-bottom: 30px;
+    // padding-top: 20px;
+    // padding-bottom: 30px;
     font-size: 20px;
     color: #fff;
 }
@@ -541,7 +446,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-    background-image: url(../assets/images/main.jpg);
+    background-image: url(../images/main.png);
     background-color: #222;
     // background-attachment: fixed;
     background-repeat: no-repeat;
@@ -553,21 +458,20 @@ textarea.form-control {
     padding: 0;
 }
 
-// .home-overlay {
-//     background-color: rgba(44, 62, 80, 0.1);
-//     background-image: url("../images/pattern.png");
-//     background-repeat: repeat;
-//     height: 100%;
-//     left: 0;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     z-index: 0;
-// }
+.home-overlay {
+    background-color: rgba(44, 62, 80, 0.1);
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
 
 .intro {
     position: absolute;
-    width: 100%;
     font-weight: 200px;
     top: 50%;
     left: 0;
@@ -577,7 +481,7 @@ textarea.form-control {
         -ms-transform: translate(0%, -50%);
          -o-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
-    padding: 0 15px;
+    // padding: 0 15px;
 }
 
 .light {
@@ -598,30 +502,32 @@ textarea.form-control {
 
 }
 
-#skills {
-    background: url(../assets/images/main.png);
-    background-color: #222;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+#home {
+
+    // background-color: #222;
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+    // background-position: 50% 50%;
+    // -webkit-background-size: cover;
+    //    -moz-background-size: cover;
+    //      -o-background-size: cover;
+    //         background-size: cover;
     color: white;
-    /*padding: 0;*/
+    height: 600px;
+    width: 99%;
+    margin-top: 0px;
 }
 
-.skills-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
+.home-overlay {
+    background-color: rgba(173, 173, 173, 0.3);
+    background-image: url('../assets/images/pattern.png');
+    // background-repeat: repeat;
+    // height: 100%;
+    // left: 0;
+    // position: absolute;
+    // top: 0;
+    // width: 100%;
+    // z-index: 0;
 }
 
 #contact {
@@ -658,7 +564,7 @@ textarea.form-control {
     background: #fff;
     border-bottom: 1px solid #d4d4d4;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 0px;
     margin: 0 0 20px;
 }
 
@@ -718,7 +624,7 @@ textarea.form-control {
 #footer {
     background: #222;
     text-align: center;
-    padding: 40px 0;
+    // padding: 40px 0;
     color: #FFF;
 }
 
@@ -738,8 +644,6 @@ textarea.form-control {
 
 .social-links {
     list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
 }
 
 .social-links li {
@@ -996,7 +900,8 @@ textarea.form-control {
     min-width: 100%;
     max-width: 100%;
     height: auto;
-    background: #3085a3;
+    // background: #3085a3;
+    background: #CC6A29;
     text-align: center;
     cursor: pointer;
 }
@@ -1067,7 +972,7 @@ textarea.form-control {
 
 figure.effect-bubba {
     /*background: #9e5406;*/
-    background: navy;
+    background: gray;
 }
 
 figure.effect-bubba img {
@@ -1242,6 +1147,8 @@ figure.effect-bubba:hover p {
 // Component styles are injected through grunt
 // injector
 @import 'about/about.scss';
+@import 'about/resume/resume.scss';
+@import 'about/testimonial/testimonial.scss';
 @import 'contact/contact.scss';
 @import 'main/main.scss';
 @import 'work/work.scss';

@@ -17,6 +17,7 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
+
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
@@ -27,20 +28,20 @@
     <![endif]-->
           <header ng-include="'components/navbar/navbar.html'"></header>
     <!-- Add your site or application content here -->
-          <div class="col-xs-12 window_nav">
+          <div class="col-sm-12 window_nav">
             <img src="assets/images/window_btns.png" alt="">
           </div>
 
-          <div class="row main">
-            <div ng-controller="MainCtrl" ng-class="controller" class="row content-container">
+          <div class="row background-gray">
+            <div ng-controller="MainCtrl" class="row content-container">
               <div class="col-sm-2 files-col">
-                <ul  style="padding-left: 0px"class="ul-folders">
-                  <li><img src="assets/images/file_closed.png" alt="file closed"/>Home</li>
+                <ul class="ul-folders">
+                  <li ng-click="go('/')"><img src="assets/images/file_closed.png" alt="file closed"/>Home</li>
                   <li ng-click="toggle1()"> <span ng-show="aboutMe" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="aboutMe" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> About Me<span ng-show="aboutMe" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="aboutMe" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
                     <ul ng-hide="aboutMe" class="ul-subfolders">
-                      <li ng-click="go('/about #skills')"><img src="assets/images/html.png" alt="file open"/>Overview.html</li>
+                      <li ng-click="go('/about')"><img src="assets/images/html.png" alt="file open"/>Overview.html</li>
                       <li><img src="assets/images/html.png" alt="file open"/>Resume.html</li>
-                      <li><img src="assets/images/html.png" alt="file open"/>Testimonials.html</li>
+                      <li ng-click="go('/testimonial')"><img src="assets/images/html.png" alt="file open"/>Testimonials.html</li>
                     </ul>
                   <li ng-click="toggle2()"> <span ng-show="works" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="works" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> Works<span ng-show="works" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="works" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
                     <ul ng-hide="works" class="ul-subfolders">
@@ -102,10 +103,23 @@
 
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
+        <!-- <script src="assets/js/custom.js"></script> -->
         <script src="assets/js/jquery.parallax-1.1.3.js"></script>
+        <script src="assets/js/jquery.cbpQTRotator.js"></script>
+        <!-- <script src="assets/js/modernizr.custom.js"></script> -->
+        <!-- <script src="assets/js/smoothscroll.js"></script> -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.sticky.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+
           <!-- injector:js -->
           <script src="app/about/about.controller.js"></script>
           <script src="app/about/about.js"></script>
+          <script src="app/about/resume/resume.controller.js"></script>
+          <script src="app/about/resume/resume.js"></script>
+          <script src="app/about/testimonial/testimonial.controller.js"></script>
+          <script src="app/about/testimonial/testimonial.js"></script>
           <script src="app/contact/contact.controller.js"></script>
           <script src="app/contact/contact.js"></script>
           <script src="app/main/main.controller.js"></script>

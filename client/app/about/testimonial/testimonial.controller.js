@@ -1,8 +1,6 @@
 'use strict';
 
 angular.module('sublimeResumeApp')
-
-
-  .controller('AboutCtrl', function ($scope) {
+  .controller('TestimonialCtrl', function ($scope) {
     $scope.message = 'Hello';
   });
