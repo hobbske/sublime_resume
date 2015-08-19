@@ -1,16 +1,17 @@
 .contact_block{
     text-align: center;
-    padding: 10% 10% 10% 10%;
-    margin-right: 15px;
+    padding: 2% 2% 2% 2%;
+    height: 100%;
 
     h1{ color: white;}
     h2:hover {color: white}
     h2{ color: orange;}
     h3{ color: white;}
-    h5:hover{color: orange}
-    h4{ color: white;}
+    h4{ color: orange; letter-spacing: 1.5px}
+    h4:hover{color: white}
     h5{ color: white;}
-    p{ color: black;}
+    h5:hover{color: orange}
+    p{ color: black; letter-spacing: 1.5px}
 }
 
 .btn-send {
@@ -18,13 +19,12 @@
     background-color: orange;
 }
 
-#pfblock-align {
-    padding-top: 10%;
-    padding-right: 10%;
-}
+// #pfblock-align {
+//     padding-right: 10%;
+// }
 
 .med-div {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: auto;
 }

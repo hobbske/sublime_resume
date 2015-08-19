@@ -17,30 +17,35 @@
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
 
       <!-- injector:css -->
       <!-- endinjector -->
     <!-- endbuild -->
   </head>
   <body ng-app="sublimeResumeApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-          <header ng-include="'components/navbar/navbar.html'"></header>
+
     <!-- Add your site or application content here -->
-          <div class="col-sm-12 window_nav">
-            <img src="assets/images/window_btns.png" alt="">
+        <div class="col-sm-12 container-main spa-view ">
+          <div class="row">
+            <header ng-include="'components/navbar/navbar.html'"></header>
+            <div class="window_nav">
+              <img src="assets/images/window_btns.png" alt="">
+            </div>
           </div>
 
-          <div class="row background-gray">
+          <div class="row">
             <div ng-controller="MainCtrl" class="row content-container">
               <div class="col-sm-2 files-col">
-                <ul class="ul-folders">
-                  <li ng-click="go('/')"><img src="assets/images/file_closed.png" alt="file closed"/>Home</li>
-                  <li ng-click="toggle1()"> <span ng-show="aboutMe" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="aboutMe" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> About Me<span ng-show="aboutMe" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="aboutMe" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
+                <ul class="ul-folders ul-folder-img">
+                  <li ng-click="toggle3()"> <span ng-show="home" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="home" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> Home<span ng-show="home" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="home" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
+                    <ul ng-hide="home" class="ul-subfolders">
+                      <li ng-click="go('/')"><img src="assets/images/html.png" alt="file open"/>Home.html</li>
+                    </ul>
+                  <li ng-click="toggle1()"> <span ng-show="aboutMe" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="aboutMe" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> About<span ng-show="aboutMe" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="aboutMe" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
                     <ul ng-hide="aboutMe" class="ul-subfolders">
                       <li ng-click="go('/about')"><img src="assets/images/html.png" alt="file open"/>Overview.html</li>
-                      <li><img src="assets/images/html.png" alt="file open"/>Resume.html</li>
+                      <li ng-click="go('/resume')"><img src="assets/images/html.png" alt="file open"/>Resume.html</li>
                       <li ng-click="go('/testimonial')"><img src="assets/images/html.png" alt="file open"/>Testimonials.html</li>
                     </ul>
                   <li ng-click="toggle2()"> <span ng-show="works" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="works" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> Works<span ng-show="works" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="works" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
@@ -49,7 +54,10 @@
                       <li><img src="assets/images/html.png" alt="file open"/>Draft_Assist.html</li>
                       <li><img src="assets/images/html.png" alt="file open"/>Work_Gems.html</li>
                     </ul>
-                  <li><img src="assets/images/file_closed.png" alt="file closed"/>Contact Me</li>
+                  <li ng-click="toggle4()"> <span ng-show="contact" class="folder_icon"><img src="assets/images/file_closed.png" alt="file closed"/></span><span ng-hide="contact" class="folder_icon"><img src="assets/images/file_open.png" alt="file open"/></span> Contact<span ng-show="contact" class="glyphicon glyphicon-chevron-right folder_arrow_right"></span><span ng-hide="contact" class="glyphicon glyphicon-chevron-down folder_arrow_right"> </span></li>
+                    <ul ng-hide="contact" class="ul-subfolders">
+                      <li ng-click="go('/contact')"><img src="assets/images/html.png" alt="file open"/>Contact.html</li>
+                    </ul>
                 </ul>
               </div>
 
@@ -63,7 +71,7 @@
               </div>
             </div>
           </div>
-
+        </div>
 
 
 
