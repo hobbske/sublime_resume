@@ -11,6 +11,7 @@ angular.module('sublimeResumeApp')
     {
       'title': 'About Me',
       'link': '/about'
+
     },
 
     {

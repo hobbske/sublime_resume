@@ -14,7 +14,7 @@ angular.module('sublimeResumeApp')
 
         };
 
-        $scope.works = true;
+        $scope.projects = true;
         $scope.toggle2 = function() {
             $scope.projects = !$scope.projects;
         };
