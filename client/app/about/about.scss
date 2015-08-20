@@ -1,5 +1,4 @@
 
-
 .about_block{
     text-align: center;
     margin: auto;
@@ -12,3 +11,107 @@
     p{ color: white; letter-spacing: 1.5px}
 }
 
+.pfblock-subtitle-about {
+    font-family: Raleway, "Times New Roman", Times, sans-serif;
+    font-style: normal;
+    font-size: 3vmin;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: 150px;
+
+}
+
+// list items - about
+
+.devicon-icons {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.devicon-icons li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.devicon-icons a {
+    width: 36px;
+    height: 36px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    // border: 1px solid rgba(255, 255, 255, .1);
+    // -webkit-border-radius: 3px;
+    //    -moz-border-radius: 3px;
+    //         border-radius: 3px;
+    font-size: 28px;
+    color: rgba(255, 255, 255, .2);
+}
+
+.devicon-icons a:hover {
+    // border: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .8);
+}
+
+// icons
+
+.devicon-icons i {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    // border: 1px solid rgba(255, 255, 255, .1);
+    // -webkit-border-radius: 3px;
+    //    -moz-border-radius: 3px;
+    //         border-radius: 3px;
+    font-size: 50px;
+    // color: rgba(255, 155, 0, 1);
+    color: rgba(255, 255, 255, .8);
+}
+
+.devicon-icons i:hover {
+    // border: 1px solid rgba(255, 255, 255, .5);
+    // color: rgba(255, 155, 0, 1);
+}
+
+.about-overlay {
+    background-color: rgba(44, 62, 80, 0.1);
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.background-img-about {
+    // background-image: url(../assets/images/Resume_html.png);
+    background-color: #222;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+    // background-position: 50% 50%;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    padding: 0px 0px 20px 0px;
+}
+
+.background-img-about-overlay {
+    background-color: rgba(44, 62, 80, 0.1);
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.background-about img {
+    opacity: .2;
+}

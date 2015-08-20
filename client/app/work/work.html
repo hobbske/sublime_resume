@@ -1,11 +1,13 @@
-<!-- Portfolio start -->
+<!--*********************
+    Project - START
+************************* -->
 
-    <section id="works" class="pfblock pfblock-gray work_block background-img" style="background-image: url('../assets/images/TennisGrp.png')">
+    <section id="works" class="pfblock pfblock-gray work_block background-img" ng-class="{'tennis' : hoverEditT, 'draft' : hoverEditD, 'work' : hoverEditW}">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="pfblock-header wow fadeInUp">
-                        <h2 class="pfblock-title">Sample Work</h2>
+                    <div class="pfblock-header wow fadeInUp background-header">
+                        <h2 class="pfblock-title">Projects</h2>
                         <div class="pfblock-line"></div>
                         <div class="pfblock-subtitle">
                             Clean, intuitive and highly functional design is the foundation of my approach to web development.
@@ -22,21 +24,25 @@
                     <div class="col-sm-4">
 
                         <div class="grid wow zoomIn">
-                            <figure class="effect-bubba work-img">
+                            <figure class="effect-bubba work-img"
+                                    ng-mouseenter="hoverInT()"
+                                    ng-mouseleave="hoverOutT()">
                                 <span a href="www.tennisgroup.herokuapp.com"><img src="assets/images/tennisGroup.png" alt="tennis group"/></a></span>
-                                <figcaption>
+                                <figcaption  ng-click="goTennis()">
                                     <h2>Ruby on Rails  <br>   <span>Tennis Group</span></h2>
                                     <p>A responsive app for communities to coordinate individual matches and play more tennis.</p>
                                 </figcaption>
                             </figure>
                         </div>
-
+                        <button type="button" class="btn btn-link" ng-click="goTennis()">www.tennisgroup.herokuapp.com</button>
                     </div>
 
                     <div class="col-sm-4">
 
                         <div class="grid wow zoomIn">
-                            <figure class="effect-bubba work-img">
+                            <figure class="effect-bubba work-img"
+                                    ng-mouseenter="hoverInD()"
+                                    ng-mouseleave="hoverOutD()">
                                 <img src="assets/images/draftAssist.png" alt="draft assist"/>
                                 <figcaption>
                                     <h2>Mean Stack <br><span>Draft Assist</span></h2>
@@ -44,13 +50,15 @@
                                 </figcaption>
                             </figure>
                         </div>
-
+                        <button type="button" class="btn btn-link" ng-click="goDraft()">www.draft-assist.herokuapp.com</button>
                     </div>
 
                     <div class="col-sm-4">
 
                         <div class="grid wow zoomIn">
-                            <figure class="effect-bubba work-img">
+                            <figure class="effect-bubba work-img"
+                                    ng-mouseenter="hoverInW()"
+                                    ng-mouseleave="hoverOutW()">
                                 <img src="assets/images/workGems.png" alt="work gems"/>
                                 <figcaption>
                                     <h2>Mean Stack <br><span>Work Gems</span></h2>
@@ -58,7 +66,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-
+                        <button type="button" class="btn btn-link" ng-click="goWork()">www.workgems.herokuapp.com</button>
                     </div>
 
                 </div>
@@ -76,4 +84,8 @@
 
     </section>
 
-<!-- Portfolio end -->
+<!--*********************
+    Projects - END
+************************* -->
+
+

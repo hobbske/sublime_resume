@@ -14,7 +14,7 @@ angular.module('sublimeResumeApp')
     },
 
     {
-      'title': 'Works',
+      'title': 'Projects',
       'link': '/work'
     },
 

@@ -4,13 +4,14 @@
     height: 100%;
 
     h1{ color: white;}
-    h2:hover {color: white}
-    h2{ color: orange;}
+    h2{ color: white;}
+    // h2:hover {color: orange}
     h3{ color: white;}
-    h4{ color: orange; letter-spacing: 1.5px}
-    h4:hover{color: white}
-    h5{ color: white;}
-    h5:hover{color: orange}
+    h4{ color: white; letter-spacing: 1.5px;
+    }
+    // h4:hover{color: orange}
+    h5{ color: black;}
+    // h5:hover{color: orange}
     p{ color: black; letter-spacing: 1.5px}
 }
 
@@ -27,4 +28,48 @@
     width: 80%;
     text-align: center;
     margin: auto;
+}
+
+.contact-view {
+    background-color: rgba(255, 165, 0, .6);
+    margin: 0% 10% 1% 10%;
+    padding: 10px
+}
+
+.background {
+    background-color: rgba(255, 165, 0, .6);
+    margin: 0% 10%;
+    padding: 5px;
+}
+
+// list items - contact
+
+.devicon-icons-contact {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.devicon-icons-contact li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.devicon-icons-contact a {
+    width: 36px;
+    height: 36px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    // border: 1px solid rgba(255, 255, 255, .1);
+    // -webkit-border-radius: 3px;
+    //    -moz-border-radius: 3px;
+    //         border-radius: 3px;
+    font-size: 38px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.devicon-icons-contact a:hover {
+    // border: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, .8);
 }
