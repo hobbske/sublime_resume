@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('sublimeResumeApp')
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('about', {
         url: '/about',

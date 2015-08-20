@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sublimeResumeApp')
+angular.module('sublimeResumeApp');
 
 //     .run(function($rootScope) {
 //     document.addEventListener("keyup", function(e) {

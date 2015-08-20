@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sublimeResumeApp')
+angular.module('sublimeResumeApp');
     // .directive('sideMenu', function () {
     //     return {
     //         restrict: "E",
